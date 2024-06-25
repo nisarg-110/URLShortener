@@ -1,12 +1,12 @@
 import { Router, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
 import { Children } from 'react'
-import AppLayout from './layouts/app-layout'
-import LandingPage from './pages/landing'
-import Dashboard from './pages/dashboard'
-import Auth from './pages/auth'
-import Link from './pages/link'
-import RedirectLink from './pages/redirect-link'
+import AppLayout from './layouts/AppLayout'
+import LandingPage from './pages/Landing'
+import Dashboard from './pages/Dashboard'
+import Auth from './pages/Auth'
+import Link from './pages/Link'
+import RedirectLink from './pages/RedirectLink'
 
 const router = createBrowserRouter([
   {
