@@ -1,4 +1,5 @@
 import Error from "@/components/Error";
+import Linkcard from "@/components/Linkcard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -73,7 +74,9 @@ function Dashboard() {
         <Filter className="absolute top-2 right-2 p-1" />
       </div>
       {error && <Error message={error?.message} />}
-      
+      {(filteredUrls || []).map((url, i) => (
+        <Linkcard key={i} url={url} fetchUrls={fnUrls} />
+      ))}
     </div>
   );
 }
